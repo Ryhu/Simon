@@ -80,15 +80,17 @@ $(".onSelect").on("click", function(){
 
 //strict switch code
 $(".strictSelect").on("click", function(){
-  if (strictFlag){
-    strictFlag = false;
-    $("#strictYes").css("color", "black");
-    $("#strictNo").css("color", "red");
-  }
-  else{
-    strictFlag = true;
-    $("#strictYes").css("color", "red");
-    $("#strictNo").css("color", "black");
+  if (onFlag){
+    if (strictFlag){
+      strictFlag = false;
+      $("#strictYes").css("color", "black");
+      $("#strictNo").css("color", "red");
+    }
+    else{
+      strictFlag = true;
+      $("#strictYes").css("color", "red");
+      $("#strictNo").css("color", "black");
+    }
   }
 })
 
